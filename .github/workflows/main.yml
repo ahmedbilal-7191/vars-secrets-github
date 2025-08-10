@@ -1,0 +1,13 @@
+#Workflow-1
+name: Trying vars in github
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Printing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Printing
+        run: |
+          echo "The ACCESS_ID is ${{ vars.ACCESS_ID }}"
